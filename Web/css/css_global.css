@@ -1,0 +1,760 @@
+/****************************************************************
+Estilo 		::	BODY
+Descripcion	:: 	Estilo global de todas las paginas.
+Log			::	JRC - 10/02/2012
+*****************************************************************/
+html { overflow-y:hidden; }
+
+body{
+    background-color: #ffffff;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color:#484848;	
+}
+
+table{	
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+div{	
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+span{	
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+
+/**********************************************
+Estilo		::	*.cabecera
+Descripcion	:: 	Estilo para la Cabecera
+Log			::	JRC - 10/02/2012
+************************************************/
+#tb_tabla_logueo{
+	width: 440px;
+	height: 270px;
+	margin-top: 80px;
+	background-image: url(../images/fondos/fnd_logueo.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#tb_tabla_logueo td.cabecera{	
+	height: 65px;
+}
+
+#tb_tabla_logueo td.icono{	
+	width: 150px;
+}
+
+#tb_tabla_logueo td.cuerpo{	
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;			
+	vertical-align:top;
+}
+
+/**********************************************
+Estilo		::	*.cabecera
+Descripcion	:: 	Estilo para la Cabecera
+Log			::	JRC - 10/02/2012
+************************************************/
+#dv_cabecera{
+	border: 0px solid #666666;
+}
+#tb_cabecera{
+	width: 100%;
+	height: 60px;	
+}
+#tb_cabecera td.left{
+	width:50%;
+	background-image: url(../images/fondos/fnd_cabecera_left.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+#tb_cabecera td.right{
+	background-image: url(../images/fondos/fnd_cabecera_right.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	vertical-align:bottom;
+	text-align:right;
+}
+
+
+/**********************************************
+Estilo		::	*.menu
+Descripcion	:: 	Estilo para el Menu
+Log			::	JRC - 10/02/2012
+************************************************/
+#tb_menu{
+	width: 100%;
+	height: 23px;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 0px solid #00A850;
+	background-image: url(../images/menu/fnd_menu.jpg);
+	background-repeat: repeat-x;
+	text-align: left;
+}
+#tb_menu td.right{
+	text-align: right;
+	width : 380px;
+}
+#tb_menu_separador{
+	width: 100%;
+	background-image: url(../images/fondos/fnd_separador_pagina.jpg);
+	background-repeat: repeat-x;
+	cursor: pointer;
+}
+#tb_menu_separador td.linea{
+	height: 7px;	
+	text-align:center;
+	background-image: url(../images/img_hide_header.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}	
+
+
+/**********************************************
+Estilo		::	*.iframe
+Descripcion	:: 	Estilo para el Contenedor
+Log			::	JRC - 15/02/2012
+************************************************/
+#ifrm_contenedor{
+	width:100%;
+}
+
+
+/**********************************************
+Estilo		::	*.cuerpo
+Descripcion	:: 	Estilo para el Cuerpo
+Log			::	JRC - 10/02/2012
+************************************************/
+#dv_cuerpo{	
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-right:5px;	
+	padding-left:10px;	
+}
+#dv_cuerpoModal{	
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-right:0px;	
+	padding-left:0px;	
+}
+#tb_cuerpoCabecera{
+	padding: 5px 0px;
+    width: 100%;
+	height: 34px;
+}
+#tb_cuerpoCabecera td.icono{
+	width:50px;
+}
+#tb_cuerpoCabecera td.titulos{	
+	text-align:left;
+	vertical-align: middle;
+	padding-left: 5px;
+	width:300px;
+}
+#tb_cuerpoCabecera td.espacio{
+	text-align:center;
+}
+#tb_cuerpoCabecera td.botones{
+	text-align:right;
+}
+
+
+
+/**********************************************
+Estilo		::	*.tabla_comun
+Descripcion	:: 	Estilo para el Cuerpo
+Log			::	JRC - 10/02/2012
+************************************************/
+#dv_contenedor{
+	width : 100%;
+	border: 0px solid blue;	
+}
+
+/**********************************************
+Estilo		::	*.tabla_comun
+Descripcion	:: 	Estilo para el Cuerpo
+Log			::	JRC - 10/02/2012
+************************************************/
+#tb_tabla_comun{
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 10px;	
+}
+#tb_tabla_comun td.lineas{
+	height:5px;
+	background-image: url(../images/fondos/fnd_top_tabla_comun.jpg);
+	background-repeat: repeat-x;
+}
+#tb_tabla_comun td.cuerpo{
+	border-left:1px solid #EBEBEB;
+	border-right:1px solid #EBEBEB;
+	border-bottom:1px solid #EBEBEB;
+	background-color:#F9F9F9;
+	padding: 10px;
+}
+
+.dv_tabla_contenedora{
+	border: 1px solid #EBEBEB;
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+
+.dv_tabla_contenedoraSola{
+	border: 1px solid #EBEBEB;
+	background-color: #FFFFFF;
+	padding: 6px;
+}
+
+#tb_tabla_comunCabecera{
+	width:100%;		
+}
+#tb_tabla_comunCabecera td.titulo{
+	text-align:left;
+	width:50%;
+	padding: 0px 0px 5px 4px;
+}
+#tb_tabla_comunCabecera td.botones{
+	text-align:right;
+	width:50%;
+	vertical-align:bottom;
+	padding:2px;
+}
+
+/**********************************************
+Estilo		::	*.tabla_comun
+Descripcion	:: 	Estilo para el Cuerpo
+Log			::	JRC - 10/02/2012
+************************************************/
+.tb_formulario_titulo{
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;	
+	padding-bottom: 6px;	
+	padding-top: 0px;		
+}
+
+/**********************************************
+Estilo		::	*.tabla_comun
+Descripcion	:: 	Estilo para el Cuerpo
+Log			::	JRC - 10/02/2012
+************************************************/
+#tb_formulario{
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;	
+	
+}
+#tb_formulario td.label{
+	width:120px;
+	height:25px;
+	text-align: right;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: bold;
+	color: #666666;
+	background-color: #F9F9F9;
+	border-bottom: 1px solid #F2F2F2;
+}
+#tb_formulario td.label_mini{
+	width:120px;
+	height:25px;
+	text-align: right;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: bold;
+	color: #666666;
+	background-color: #F9F9F9;
+	border-bottom: 1px solid #F2F2F2;
+	font-size: 9;
+}
+#tb_formulario td.input{
+	height:20px;
+	padding-left: 5px;
+}
+#tb_formulario td span.labelText{
+	color: #666666;
+	background-color: #FFFFF4;
+	border-bottom: 1px solid #F8F8F8;
+	padding-left: 5px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	display:inline-block;
+}
+
+/**********************************************
+Estilo		::	*.pie
+Descripcion	:: 	Estilo para el Pie
+Log			::	JRC - 10/02/2012
+************************************************/
+#dv_pie{
+	padding-top:10px;
+	width: 100%;
+}
+#tb_pie{
+	border-top: 1px solid #F2F2F2;
+	width: 100%;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-bottom: 10px;		
+	font-size:10px;
+	color:#999999;	
+}
+#tb_pie td.contenido_left{
+	text-align:left;
+}
+#tb_pie td.contenido_right{
+	text-align:right;
+}
+
+
+/***************************************************************
+Estilo		:: dv_Botones
+Descripcion	:: Estilo para los botones de accion
+Log			::	JRC - 10/02/2012
+************************************************************ */
+/* NORMAL */
+.dv_img_boton{
+	text-align:center;
+	width:50px;
+	height:60px;
+	float:right;
+	padding-left:3px;
+	padding-right:3px;	
+}
+.dv_img_boton A{ 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size : 11px; 
+	color:#666666;
+	text-decoration:none;	
+}
+.dv_img_boton A:active {  
+	text-decoration :none;
+}
+.dv_img_boton A:hover {  
+	text-decoration :none;
+}
+.dv_img_boton A:visited {  
+	text-decoration :none;
+}
+.dv_img_boton A:visited:hover { 
+	text-decoration :none;
+} 
+/* HOVER */
+.dv_img_boton_hover{
+	text-align:center;
+	background-color:#FFFFCC;
+	width:50px;
+	height:50px;
+	float:right;
+	padding-left:3px;
+	padding-right:3px;		
+	text-decoration:none;
+}
+.dv_img_boton_hover A{ 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size : 11px; 
+	color:#006600;
+	text-decoration:none;
+}
+.dv_img_boton_hover A:active {  
+	text-decoration :none;
+}
+.dv_img_boton_hover A:hover {  
+	text-decoration :none;
+}
+.dv_img_boton_hover A:visited {  
+	text-decoration :none;
+}
+.dv_img_boton_hover A:visited:hover { 
+	text-decoration :none;
+} 
+/* SEPARADOR */
+.dv_img_boton_separador{
+	text-align:center;
+	width:10px;	
+	float:right;
+	padding-left:3px;
+	padding-right:3px;	
+	padding-top:20px;	
+	vertical-align: middle;
+	border: 0px solid red;
+	color: #999999;
+}
+
+/***************************************************************
+Estilo		:: dv_img_boton_mini
+Descripcion	:: Estilo para los botones de accion
+Log			::	JRC - 10/02/2012
+************************************************************ */
+/* NORMAL */
+.dv_img_boton_mini{
+	text-align:center;	
+	height:22px;
+	float:right;
+	padding-left:6px;
+	padding-right:6px;	
+}
+.dv_img_boton_mini A{ 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size : 11px; 
+	color:#666666;
+	text-decoration:none;	
+}
+.dv_img_boton_mini A:active {  
+	text-decoration :none;
+}
+.dv_img_boton_mini A:hover {  
+	text-decoration :none;
+}
+.dv_img_boton_mini A:visited {  
+	text-decoration :none;
+}
+.dv_img_boton_mini A:visited:hover { 
+	text-decoration :none;
+}
+.dv_img_boton_mini A img {
+	vertical-align:text-top;
+}
+	
+
+/***************************************************************
+Estilo		::	tb_listado
+Descripcion	::	Estilo para los botones de accion
+Log			::	JRC - 10/02/2012
+************************************************************ */
+#tb_listado{
+	width:100%;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;			
+}
+
+#tb_listado th{
+	background-color: #0F9F3E;
+	height: 30px;
+	color: #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	padding:3px;
+}
+
+#tb_listado td{
+	height: 30px;
+	color: #333333;
+	padding:5px;	
+	border-left: 1px solid #FFFFFF;
+}
+
+#tb_listado tr.even{
+	background-color: #F0F0F0;
+}
+
+#tb_listadoPie{
+	width:100%;
+	background-color: #F0F0F0;
+	height:40px;
+	border: 1px solid #FFFFFF;
+	padding: 3px;
+}
+
+
+/***************************************************************
+Estilo		:: *.imgaes
+Descripcion	:: Estilo para imagenes
+Log			::	JRC - 10/02/2012
+************************************************************ */
+.img_input{
+	vertical-align:top;
+	cursor: pointer;
+}
+
+
+/***************************************************************
+Estilo		:: *.Tabs
+Descripcion	:: Estilo para Tabs
+Log			::	JRC - 10/02/2012
+************************************************************ */
+#divTabs{
+	margin-top: 10px;
+}
+#divTabs div{
+	border: 1px solid #EBEBEB;
+}
+#divTabs .ui-state-default { 
+	border: 1px solid #EBEBEB; 	
+	background: none;
+	background-color:#F9F9F9;
+	font-weight: normal; 
+	color: #666666; 
+}	
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { 
+	color: #666666; 
+	text-decoration: none; 
+}
+#divTabs .ui-state-active { 
+	border: 1px solid #3A9831 !important; 
+	background: #6eac2c url(../images/jquery/fnd_tab.png) 50% 50% repeat-x !important; 
+	font-weight: normal !important; 
+	color: #ffffff !important; 	
+}
+#divTabs .ui-state-active a, .ui-state-active a:hover { 
+	color: #ffffff !important; 	 
+	text-decoration: none !important; 	
+}
+#divTabs .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { 
+	border: 1px solid #C0C0C0; 
+	background: none;; 
+	background-color: #F0F0F0;
+	font-weight: normal; 
+	color: #666666; 
+}
+#divTabs .ui-state-hover a, .ui-state-hover a:hover { 
+	color: #666666; 
+	text-decoration: none; 
+}
+#divTabs .ui-widget-headerTabs {
+    background-color: #F9F9F9;
+    border: 0 solid #009346;
+    color: #EAF5F7;
+    font-weight: bold;
+    height: 30px !important;
+}
+
+/*//////////////////////////////////////////////////////////*/
+
+#divTabsM{
+	margin-top: 10px;
+}
+#divTabsM div{
+	border: 1px solid #EBEBEB;
+}
+#divTabsM .ui-state-default { 
+	border: 1px solid #EBEBEB; 	
+	background: none;
+	background-color:#F9F9F9;
+	font-weight: normal; 
+	color: #666666; 
+}	
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { 
+	color: #666666; 
+	text-decoration: none; 
+}
+#divTabsM .ui-state-active { 
+	border: 1px solid #3A9831 !important; 
+	background: #6eac2c url(../images/jquery/fnd_tab.png) 50% 50% repeat-x !important; 
+	font-weight: normal !important; 
+	color: #ffffff !important; 	
+}
+#divTabsM .ui-state-active a, .ui-state-active a:hover { 
+	color: #ffffff !important; 	 
+	text-decoration: none !important; 	
+}
+#divTabsM .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { 
+	border: 1px solid #C0C0C0; 
+	background: none;; 
+	background-color: #F0F0F0;
+	font-weight: normal; 
+	color: #666666; 
+}
+#divTabsM .ui-state-hover a, .ui-state-hover a:hover { 
+	color: #666666; 
+	text-decoration: none; 
+}
+#divTabsM .ui-widget-headerTabs {
+    background-color: #F9F9F9;
+    border: 0 solid #009346;
+    color: #EAF5F7;
+    font-weight: bold;
+    height: 30px !important;
+}
+
+
+/*//////////////////////////////////////////////////////////*/
+
+#divTabsV{
+	margin-top: 10px;
+}
+#divTabsV div{
+	border: 1px solid #EBEBEB;
+}
+#divTabsV .ui-state-default { 
+	border: 1px solid #EBEBEB; 	
+	background: none;
+	background-color:#F9F9F9;
+	font-weight: normal; 
+	color: #666666; 
+}	
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { 
+	color: #666666; 
+	text-decoration: none; 
+}
+#divTabsV .ui-state-active { 
+	border: 1px solid #3A9831 !important; 
+	background: #6eac2c url(../images/jquery/fnd_tab.png) 50% 50% repeat-x !important; 
+	font-weight: normal !important; 
+	color: #ffffff !important; 	
+}
+#divTabsV .ui-state-active a, .ui-state-active a:hover { 
+	color: #ffffff !important; 	 
+	text-decoration: none !important; 	
+}
+#divTabsV .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { 
+	border: 1px solid #C0C0C0; 
+	background: none;; 
+	background-color: #F0F0F0;
+	font-weight: normal; 
+	color: #666666; 
+}
+#divTabsV .ui-state-hover a, .ui-state-hover a:hover { 
+	color: #666666; 
+	text-decoration: none; 
+}
+#divTabsV .ui-widget-headerTabs {
+    background-color: #F9F9F9;
+    border: 0 solid #009346;
+    color: #EAF5F7;
+    font-weight: bold;
+    height: 30px !important;
+}
+
+/*//////////////////////////////////////////////////////////*/
+
+#divTabsS{
+	margin-top: 10px;
+}
+#divTabsS div{
+	border: 1px solid #EBEBEB;
+}
+#divTabsS .ui-state-default { 
+	border: 1px solid #EBEBEB; 	
+	background: none;
+	background-color:#F9F9F9;
+	font-weight: normal; 
+	color: #666666; 
+}	
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { 
+	color: #666666; 
+	text-decoration: none; 
+}
+#divTabsS .ui-state-active { 
+	border: 1px solid #3A9831 !important; 
+	background: #6eac2c url(../images/jquery/fnd_tab.png) 50% 50% repeat-x !important; 
+	font-weight: normal !important; 
+	color: #ffffff !important; 	
+}
+#divTabsS .ui-state-active a, .ui-state-active a:hover { 
+	color: #ffffff !important; 	 
+	text-decoration: none !important; 	
+}
+#divTabsS .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { 
+	border: 1px solid #C0C0C0; 
+	background: none;; 
+	background-color: #F0F0F0;
+	font-weight: normal; 
+	color: #666666; 
+}
+#divTabsS .ui-state-hover a, .ui-state-hover a:hover { 
+	color: #666666; 
+	text-decoration: none; 
+}
+#divTabsS .ui-widget-headerTabs {
+    background-color: #F9F9F9;
+    border: 0 solid #009346;
+    color: #EAF5F7;
+    font-weight: bold;
+    height: 30px !important;
+}
+
+
+/***************************************************************
+Estilo		:: *.scroll
+Descripcion	:: Estilo para scrolls
+Log			::	JRC - 10/02/2012
+************************************************************ */
+.css_scrollPane{
+	width: 100%;
+	height: 168px;
+	overflow: auto;
+	border: 0px solid red;
+}
+.horizontal-only{
+	height: auto;
+	max-height: 200px;
+}
+
+/***************************************************************
+Estilo		:: 
+Descripcion	:: 
+Log			::	
+************************************************************ */
+
+table.bordes {
+    border: 0px;
+    padding: 0px;
+    border-spacing: 3px;    
+}
+
+.botonHorizontal {
+    height:18px; 
+    width:60px;
+}
+
+img.boton16 {
+    width:16px; 
+    height:16px;
+}
+
+img.borde {
+    border: 0px;
+}
+
+
+/***************************************************************
+Estilo		:: .cssLogPage
+Descripcion	:: 
+Log			::	
+************************************************************ */
+.cssLogPage_Aviso
+{
+	background-color:#FFFFF4;
+	border:1px solid #FFCC00;
+	color: #AB873A;	
+	height: 35px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:2px;
+	vertical-align:middle;
+	margin:3px;
+	font-size:11px;
+}
+.cssLogPage_Error
+{
+	background-color:#FFFAF9;
+	border:1px solid #F25757;
+	color: #F25757;	
+	height: 35px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:2px;
+	vertical-align:middle;
+	margin:3px;
+	font-size:11px;	
+}

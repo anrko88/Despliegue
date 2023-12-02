@@ -1,0 +1,689 @@
+/***************************************************************
+Estilo		:: 	*.Grilla A
+Descripcion	:: 	Estilo para Grilla
+Log			::	JRC - 10/02/2012
+************************************************************ */
+#gbox_jqGrid_lista_A  {
+    background: none;
+    border: 0px solid #009346;
+    color: #222222;
+}
+
+#gbox_jqGrid_lista_A div {
+    border: 0px solid #EBEBEB;
+}
+
+#gbox_jqGrid_lista_A .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("../images/jquery/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #FFFFFF;	
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#jqGrid_lista_A td{
+    border: 1px solid #FFFFFF !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#jqGrid_lista_A .ui-state-hover {
+    background: none;
+	background-color: #FFF9AE;
+    border: 1px solid #FFF1C1;
+    color: #222222;
+    font-weight: normal;
+}
+
+#gbox_jqGrid_lista_A  .ui-state-default .ui-icon {
+    background-image: url("../images/jquery/ui-icons_e0fdff_256x240_white.png");
+}
+
+#gbox_jqGrid_lista_A .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../images/jquery/ui-icons_056b93_256x240_black.png");
+}
+
+
+/***************************************************************
+Estilo		:: 	*.Grilla B
+Descripcion	:: 	Estilo para Grilla
+Log			::	JRC - 10/02/2012
+************************************************************ */
+#gbox_jqGrid_lista_B  {
+    background: none;
+    border: 0px solid #009346;
+    color: #222222;
+}
+
+#gbox_jqGrid_lista_B div {
+    border: 0px solid #EBEBEB;
+}
+
+#gbox_jqGrid_lista_B .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("../images/jquery/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #FFFFFF;	
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#jqGrid_lista_B td{
+    border: 1px solid #FFFFFF !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#jqGrid_lista_B .ui-state-hover {
+    background: none;
+	background-color: #FFF9AE;
+    border: 1px solid #FFF1C1;
+    color: #222222;
+    font-weight: normal;
+}
+
+#gbox_jqGrid_lista_B  .ui-state-default .ui-icon {
+    background-image: url("../images/jquery/ui-icons_e0fdff_256x240_white.png");
+}
+
+#gbox_jqGrid_lista_B .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../images/jquery/ui-icons_056b93_256x240_black.png");
+}
+
+
+
+
+/***************************************************************
+Estilo		:: 	*.Grilla C
+Descripcion	:: 	Estilo para Grilla
+Log			::	JRC - 10/02/2012
+************************************************************ */
+#gbox_jqGrid_lista_C  {
+    background: none;
+    border: 0px solid #009346;
+    color: #222222;
+}
+
+#gbox_jqGrid_lista_C div {
+    border: 0px solid #EBEBEB;
+}
+
+#gbox_jqGrid_lista_C .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("../images/jquery/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #FFFFFF;	
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#jqGrid_lista_C td{
+    border: 1px solid #FFFFFF !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#jqGrid_lista_C .ui-state-hover {
+    background: none;
+	background-color: #FFF9AE;
+    border: 1px solid #FFF1C1;
+    color: #222222;
+    font-weight: normal;
+}
+
+#gbox_jqGrid_lista_C  .ui-state-default .ui-icon {
+    background-image: url("../images/jquery/ui-icons_e0fdff_256x240_white.png");
+}
+
+#gbox_jqGrid_lista_C .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../images/jquery/ui-icons_056b93_256x240_black.png");
+}
+
+/***************************************************************
+Estilo		:: 	*.Grilla D
+Descripcion	:: 	Estilo para Grilla
+Log			::	JRC - 10/02/2012
+************************************************************ */
+#gbox_jqGrid_lista_D  {
+    background: none;
+    border: 0px solid #009346;
+    color: #222222;
+}
+
+#gbox_jqGrid_lista_D div {
+    border: 0px solid #EBEBEB;
+}
+
+#gbox_jqGrid_lista_D .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("../images/jquery/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #FFFFFF;	
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#jqGrid_lista_D td{
+    border: 1px solid #FFFFFF !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#jqGrid_lista_D .ui-state-hover {
+    background: none;
+	background-color: #FFF9AE;
+    border: 1px solid #FFF1C1;
+    color: #222222;
+    font-weight: normal;
+}
+
+#gbox_jqGrid_lista_D  .ui-state-default .ui-icon {
+    background-image: url("../images/jquery/ui-icons_e0fdff_256x240_white.png");
+}
+
+#gbox_jqGrid_lista_D .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../images/jquery/ui-icons_056b93_256x240_black.png");
+}
+
+/***************************************************************
+Estilo		:: 	*.Grilla E
+Descripcion	:: 	Estilo para Grilla
+Log			::	JRC - 10/02/2012
+************************************************************ */
+#gbox_jqGrid_lista_E  {
+    background: none;
+    border: 0px solid #009346;
+    color: #222222;
+}
+
+#gbox_jqGrid_lista_E div {
+    border: 0px solid #EBEBEB;
+}
+
+#gbox_jqGrid_lista_E .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("../images/jquery/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #FFFFFF;	
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#jqGrid_lista_E td{
+    border: 1px solid #FFFFFF !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#jqGrid_lista_E .ui-state-hover {
+    background: none;
+	background-color: #FFF9AE;
+    border: 1px solid #FFF1C1;
+    color: #222222;
+    font-weight: normal;
+}
+
+#gbox_jqGrid_lista_E  .ui-state-default .ui-icon {
+    background-image: url("../images/jquery/ui-icons_e0fdff_256x240_white.png");
+}
+
+#gbox_jqGrid_lista_E .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../images/jquery/ui-icons_056b93_256x240_black.png");
+}
+
+
+/***************************************************************
+Estilo		:: 	*.Grilla F
+Descripcion	:: 	Estilo para Grilla
+Log			::	JRC - 10/02/2012
+************************************************************ */
+#gbox_jqGrid_lista_F  {
+    background: none;
+    border: 0px solid #009346;
+    color: #222222;
+}
+
+#gbox_jqGrid_lista_F div {
+    border: 0px solid #EBEBEB;
+}
+
+#gbox_jqGrid_lista_F .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("../images/jquery/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #FFFFFF;	
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#jqGrid_lista_F td{
+    border: 1px solid #FFFFFF !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#jqGrid_lista_F .ui-state-hover {
+    background: none;
+	background-color: #FFF9AE;
+    border: 1px solid #FFF1C1;
+    color: #222222;
+    font-weight: normal;
+}
+
+#gbox_jqGrid_lista_F  .ui-state-default .ui-icon {
+    background-image: url("../images/jquery/ui-icons_e0fdff_256x240_white.png");
+}
+
+#gbox_jqGrid_lista_F .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../images/jquery/ui-icons_056b93_256x240_black.png");
+}
+
+
+
+/***************************************************************
+Estilo		:: 	*.Grilla G
+Descripcion	:: 	Estilo para Grilla
+Log			::	JRC - 10/02/2012
+************************************************************ */
+#gbox_jqGrid_lista_G  {
+    background: none;
+    border: 0px solid #009346;
+    color: #222222;
+}
+
+#gbox_jqGrid_lista_G div {
+    border: 0px solid #EBEBEB;
+}
+
+#gbox_jqGrid_lista_G .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("../images/jquery/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #FFFFFF;	
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#jqGrid_lista_G td{
+    border: 1px solid #FFFFFF !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#jqGrid_lista_G .ui-state-hover {
+    background: none;
+	background-color: #FFF9AE;
+    border: 1px solid #FFF1C1;
+    color: #222222;
+    font-weight: normal;
+}
+
+#gbox_jqGrid_lista_G  .ui-state-default .ui-icon {
+    background-image: url("../images/jquery/ui-icons_e0fdff_256x240_white.png");
+}
+
+#gbox_jqGrid_lista_G .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../images/jquery/ui-icons_056b93_256x240_black.png");
+}
+
+/***************************************************************
+Estilo		:: 	*.Grilla H
+Descripcion	:: 	Estilo para Grilla
+Log			::	JRC - 10/02/2012
+************************************************************ */
+#gbox_jqGrid_lista_H  {
+    background: none;
+    border: 0px solid #009346;
+    color: #222222;
+}
+
+#gbox_jqGrid_lista_H div {
+    border: 0px solid #EBEBEB;
+}
+
+#gbox_jqGrid_lista_H .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("../images/jquery/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #FFFFFF;	
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#jqGrid_lista_H td{
+    border: 1px solid #FFFFFF !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#jqGrid_lista_H .ui-state-hover {
+    background: none;
+	background-color: #FFF9AE;
+    border: 1px solid #FFF1C1;
+    color: #222222;
+    font-weight: normal;
+}
+
+#gbox_jqGrid_lista_H  .ui-state-default .ui-icon {
+    background-image: url("../images/jquery/ui-icons_e0fdff_256x240_white.png");
+}
+
+#gbox_jqGrid_lista_H .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../images/jquery/ui-icons_056b93_256x240_black.png");
+}
+
+
+/***************************************************************
+Estilo		:: 	*.Grilla I
+Descripcion	:: 	Estilo para Grilla
+Log			::	JRC - 10/02/2012
+************************************************************ */
+#gbox_jqGrid_lista_I  {
+    background: none;
+    border: 0px solid #009346;
+    color: #222222;
+}
+
+#gbox_jqGrid_lista_I div {
+    border: 0px solid #EBEBEB;
+}
+
+#gbox_jqGrid_lista_I .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("../images/jquery/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #FFFFFF;	
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#jqGrid_lista_I td{
+    border: 1px solid #FFFFFF !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#jqGrid_lista_I .ui-state-hover {
+    background: none;
+	background-color: #FFF9AE;
+    border: 1px solid #FFF1C1;
+    color: #222222;
+    font-weight: normal;
+}
+
+#gbox_jqGrid_lista_I  .ui-state-default .ui-icon {
+    background-image: url("../images/jquery/ui-icons_e0fdff_256x240_white.png");
+}
+
+#gbox_jqGrid_lista_I .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../images/jquery/ui-icons_056b93_256x240_black.png");
+}
+
+
+
+
+/***************************************************************
+Estilo		:: 	*.Grilla J
+Descripcion	:: 	Estilo para Grilla
+Log			::	JRC - 10/02/2012
+************************************************************ */
+#gbox_jqGrid_lista_J  {
+    background: none;
+    border: 0px solid #009346;
+    color: #222222;
+}
+
+#gbox_jqGrid_lista_J div {
+    border: 0px solid #EBEBEB;
+}
+
+#gbox_jqGrid_lista_J .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("../images/jquery/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #FFFFFF;	
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#jqGrid_lista_J td{
+    border: 1px solid #FFFFFF !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#jqGrid_lista_J .ui-state-hover {
+    background: none;
+	background-color: #FFF9AE;
+    border: 1px solid #FFF1C1;
+    color: #222222;
+    font-weight: normal;
+}
+
+#gbox_jqGrid_lista_J  .ui-state-default .ui-icon {
+    background-image: url("../images/jquery/ui-icons_e0fdff_256x240_white.png");
+}
+
+#gbox_jqGrid_lista_J .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../images/jquery/ui-icons_056b93_256x240_black.png");
+}
+
+
+
+/***************************************************************
+Estilo		:: 	*.Grilla K
+Descripcion	:: 	Estilo para Grilla
+Log			::	JRC - 10/02/2012
+************************************************************ */
+#gbox_jqGrid_lista_K  {
+    background: none;
+    border: 0px solid #009346;
+    color: #222222;
+}
+
+#gbox_jqGrid_lista_K div {
+    border: 0px solid #EBEBEB;
+}
+
+#gbox_jqGrid_lista_K .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("../images/jquery/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #FFFFFF;	
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#jqGrid_lista_K td{
+    border: 1px solid #FFFFFF !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#jqGrid_lista_K .ui-state-hover {
+    background: none;
+	background-color: #FFF9AE;
+    border: 1px solid #FFF1C1;
+    color: #222222;
+    font-weight: normal;
+}
+
+#gbox_jqGrid_lista_K  .ui-state-default .ui-icon {
+    background-image: url("../images/jquery/ui-icons_e0fdff_256x240_white.png");
+}
+
+#gbox_jqGrid_lista_K .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../images/jquery/ui-icons_056b93_256x240_black.png");
+}
+
+
+
+
+
+/***************************************************************
+Estilo		:: 	*.Grilla L
+Descripcion	:: 	Estilo para Grilla
+Log			::	JRC - 28/01/2013
+************************************************************ */
+#gbox_jqGrid_lista_L  {
+    background: none;
+    border: 0px solid #009346;
+    color: #222222;
+}
+
+#gbox_jqGrid_lista_L div {
+    border: 0px solid #EBEBEB;
+}
+
+#gbox_jqGrid_lista_L .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("../images/jquery/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #FFFFFF;	
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#jqGrid_lista_L td{
+    border: 1px solid #FFFFFF !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#jqGrid_lista_L .ui-state-hover {
+    background: none;
+	background-color: #FFF9AE;
+    border: 1px solid #FFF1C1;
+    color: #222222;
+    font-weight: normal;
+}
+
+#gbox_jqGrid_lista_L  .ui-state-default .ui-icon {
+    background-image: url("../images/jquery/ui-icons_e0fdff_256x240_white.png");
+}
+
+#gbox_jqGrid_lista_L .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../images/jquery/ui-icons_056b93_256x240_black.png");
+}
+
+
+
+
+/***************************************************************
+Estilo		:: 	*.Grilla M
+Descripcion	:: 	Estilo para Grilla
+Log			::	JRC - 28/01/2013
+************************************************************ */
+#gbox_jqGrid_lista_M  {
+    background: none;
+    border: 0px solid #009346;
+    color: #222222;
+}
+
+#gbox_jqGrid_lista_M div {
+    border: 0px solid #EBEBEB;
+}
+
+#gbox_jqGrid_lista_M .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("../images/jquery/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #FFFFFF;	
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#jqGrid_lista_M td{
+    border: 1px solid #FFFFFF !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#jqGrid_lista_M .ui-state-hover {
+    background: none;
+	background-color: #FFF9AE;
+    border: 1px solid #FFF1C1;
+    color: #222222;
+    font-weight: normal;
+}
+
+#gbox_jqGrid_lista_M  .ui-state-default .ui-icon {
+    background-image: url("../images/jquery/ui-icons_e0fdff_256x240_white.png");
+}
+
+#gbox_jqGrid_lista_M .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../images/jquery/ui-icons_056b93_256x240_black.png");
+}
+
+
+
+
+/***************************************************************
+Estilo		:: 	*.Grilla N
+Descripcion	:: 	Estilo para Grilla
+Log			::	JRC - 28/01/2013
+************************************************************ */
+#gbox_jqGrid_lista_N  {
+    background: none;
+    border: 0px solid #009346;
+    color: #222222;
+}
+
+#gbox_jqGrid_lista_N div {
+    border: 0px solid #EBEBEB;
+}
+
+#gbox_jqGrid_lista_N .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("../images/jquery/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #FFFFFF;	
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#jqGrid_lista_N td{
+    border: 1px solid #FFFFFF !important;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#jqGrid_lista_N .ui-state-hover {
+    background: none;
+	background-color: #FFF9AE;
+    border: 1px solid #FFF1C1;
+    color: #222222;
+    font-weight: normal;
+}
+
+#gbox_jqGrid_lista_N  .ui-state-default .ui-icon {
+    background-image: url("../images/jquery/ui-icons_e0fdff_256x240_white.png");
+}
+
+#gbox_jqGrid_lista_N .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../images/jquery/ui-icons_056b93_256x240_black.png");
+}
+
+
+
+
+
+/***************************************************************
+Estilo		:: 	GRILLA GLOBAL 
+Descripcion	:: 	Estilos GLOBAL para Grillas
+Log			::	JRC - 10/02/2012
+************************************************************ */
+.gridAltClass{ background: #F0F0F0; }
+
+#jqGrid_pager_A, #jqGrid_pager_B, #jqGrid_pager_C, #jqGrid_pager_D, #jqGrid_pager_E, #jqGrid_pager_F, #jqGrid_pager_G,#jqGrid_pager_H,#jqGrid_pager_I,#jqGrid_pager_J,#jqGrid_pager_K{
+    background: none !important;
+	background-color: #E5E5E5 !important;
+    border: 1px solid #FFFFFF;
+    color: #666666 !important;
+    font-weight: normal;
+	-moz-border-radius-bottomleft: 0px; 
+	-moz-border-radius-bottomright: 0px; 
+}
+
+

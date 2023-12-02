@@ -1,0 +1,137 @@
+ul.jd_menu, 
+ul.jd_menu_vertical {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	margin-left: 5px;
+}
+ul.jd_menu ul,
+ul.jd_menu_vertical ul {
+	display: none;
+}
+ul.jd_menu li {
+	float: left;
+}
+ul.jd_menu_vertical {
+	width: 200px;
+}
+ul.jd_menu_vertical li {
+	float: none;
+}
+
+/* -- Sub-Menus -- */
+ul.jd_menu ul,
+ul.jd_menu_vertical ul {
+	position: absolute;
+	display: none;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	z-index: 10000;
+}
+ul.jd_menu ul li,
+ul.jd_menu_vertical ul li {
+	float: none;
+	margin: 0px;
+}
+
+
+ul.jd_menu,
+ul.jd_menu ul,
+ul.jd_menu_vertical,
+ul.jd_menu_vertical ul {		
+	/*background-color: #F0F0F0;*/
+	border: 0px solid #CCCCCC;	
+	height: 22px;
+}
+ul.jd_menu_vertical {
+	height: auto;
+}
+ul.jd_menu ul {
+	height: auto;
+}
+* html ul.jd_menu ul {
+	width: 1%;
+}
+ul.jd_menu li {
+	font-family: font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #353535;
+	
+	line-height: 14px;
+	
+	margin: 0px;
+	padding: 4px 14px 3px 14px;
+	height: 15px;
+	
+	cursor: pointer;
+	white-space: nowrap;	
+
+	text-align: center;
+	background: url("../../images/menu/img_separator.gif") no-repeat left top;
+	
+}
+ul.jd_menu li  ul{
+	border: 1px solid #CCCCCC;	
+}
+ul.jd_menu li li {
+	width: 160px;
+	background: url("../../images/menu/fnd_menuIcono.gif") no-repeat left top;
+	background-color: #FFFFFF;		
+	vertical-align: middle;	
+	text-align:left;
+	padding-left:8px;
+}
+ul.jd_menu li a {
+	color: #353535;
+	text-decoration: none;	
+}
+
+ul.jd_menu li li a {
+	color: #353535;
+	text-decoration: none;	
+	padding-left: 15px;
+}
+
+ul.jd_menu li li.jdm_active a:hover {
+	color: #353535;
+}
+
+ul.jd_menu li.jdm_hover,
+ul.jd_menu li.jdm_active{
+	color: #FFFFFF;	
+	background: none;	
+	background-color: #00A850;
+	padding: 3px 13px 2px 13px;	
+	border: 1px solid #00A850;
+	border-left: 1px solid #00A850;
+	border-top: 1px solid #00A850;
+	height: 15px;
+}
+
+ul.jd_menu li li.jdm_hover,
+ul.jd_menu li li.jdm_active {
+	color: #FFFFFF;
+	width: 168px;
+	background-color: #E6E6E6;		
+	padding: 3px 6px 2px 6px;
+	border: 1px solid #666666;
+	height: 15px;
+}
+
+.jd_menu_icono{
+	border: 0px solid #000000;
+	vertical-align:top;	
+}
+
+ul.jd_menu li.separator {
+	width: 0px;
+	background: url("../../images/menu/img_separator1.gif") no-repeat center top;
+}
+
+
+.css_menu_separator {
+	width: 5px;
+	background: url("../../images/menu/img_separator.gif") no-repeat center top;
+}
+

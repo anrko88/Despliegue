@@ -1,0 +1,259 @@
+/****************************************************************
+Estilo 		::	*.botones
+Descripcion	:: 	Estilo para botones
+Log			::	JRC - 10/02/2012
+*****************************************************************/
+.css_btn_general{
+    background-color: #e3e3e3;
+    background-image: url(../images/fondos/fnd_btn_general.gif);
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px !important;
+    font-weight: bold !important;
+    color: #464646;
+    border: solid;
+    border-color: #bbbbbb;
+    border-collapse: collapse;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+.css_btn_login {
+    border: 1;
+    background-color: #f9f9f9 !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+    padding: 2px 12px 2px 12px;
+    text-align: center !important;
+    width: auto !important;
+    overflow: visible;
+    color: #464646;
+    background-image: url(../images/fondos/fnd_btn_login.gif);
+    border-color: #c3c3c3) !important;
+	border-style: solid;
+    border-width: 1px;
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+
+/****************************************************************
+Estilo 		::	*.inputs
+Descripcion	:: 	Estilo para inputs
+Log			::	JRC - 10/02/2012
+*****************************************************************/
+input[type='text'], input[type='file'], input[type='password'], textarea
+{
+    border: 1px;
+	border-color:#A6A6A7;
+	border-style: solid;
+    font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 11px;
+    color: #464646;
+}
+
+.css_input
+{
+    border: 1px solid #A6A6A7;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 11px;
+    color: #464646;
+}
+ 
+.css_input_error
+{
+    background-color: #FDF7F7;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FA5858;
+    color: #666;
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.css_input_error[type='text'], .css_input_error[type='textarea'], .css_input_error[type='password']
+{
+    background-color: #FDF7F7;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FA5858;
+    color: #666;
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.css_input_inactivo
+{
+    border: 1px solid #CCCCCC;
+    color: #464646;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5F5;
+}
+.css_input_inactivo[type='text'], .css_input_inactivo[type='textarea'], .css_input_inactivo[type='password']
+{
+    border: 1px solid #CCCCCC;
+    color: #464646;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5F5;
+}
+
+.css_input_obligatorio
+{
+    border: 1px solid #A6A6A7;
+    color: #464646;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFD7;
+}
+.css_input_obligatorio[type='text'], .css_input_obligatorio[type='textarea'], .css_input_obligatorio[type='password']
+{
+    border: 1px solid #A6A6A7;
+    color: #464646;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFD7;
+}
+
+
+/****************************************************************
+Estilo 		::	*.selects
+Descripcion	:: 	Estilo para selects
+Log			::	JRC - 10/02/2012
+*****************************************************************/
+select {    
+	border: 1px;
+	border-color:#a6a6a7;
+	border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #464646;
+    font-size: 11px;
+	padding-top: 1px;
+}
+
+.css_select_error{
+    -moz-border-radius: 2px 2px 2px 2px;
+    background-color: #FBEFEF;
+    border-width: 1px;
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: #FA5858;
+    font-size: 11px;
+    color: #333;
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.css_select_inactivo{
+    -moz-border-radius: 2px 2px 2px 2px;
+    background-color: #F5F5F5;
+    border-width: 1px;
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: #CCCCCC;
+    font-size: 11px;
+    color: #333;
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.css_select_obligatorio{
+    -moz-border-radius: 2px 2px 2px 2px;
+    background-color: #FFFFD7;
+    border-width: 1px;
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: #A6A6A7;
+    font-size: 11px;
+    color: #333;
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/****************************************************************
+Estilo 		::	*.calendario
+Descripcion	:: 	Estilo para Calendarios
+Log			::	JRC - 10/02/2012
+*****************************************************************/
+.css_calendario
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #A6A6A7; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #464646;
+    height:16px;
+    font-size: 8pt;
+    background-image: url('../images/calendario.gif');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #FFFFFF;
+}
+
+.css_calendario_error
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FA5858 !important; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #585858;
+    height:16px;
+    font-size: 8pt;
+    background-image: url('../images/calendario.gif');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #FBEFEF;
+}
+ 
+.css_calendario_inactivo
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #CCCCCC !important; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #585858;
+    height:16px;
+    font-size: 8pt;
+    background-image: url('../images/calendario.gif');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #F5F5F5;
+}
+ 
+.css_calendario_obligatorio
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #A6A6A7 !important; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #585858;
+    height:16px;
+    font-size: 8pt;
+    background-image: url('../images/calendario.gif');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #FFFFD7;
+}
+
+
+
+/****************************************************************
+Estilo 		::	*.fieldset
+Descripcion	:: 	Estilo para Calendarios
+Log			::	JRC - 10/02/2012
+*****************************************************************/
+fieldset {
+  padding: 1em;
+  border:1px solid #EBEBEB;
+}
+legend {
+  color: #666666;
+  font-weight:bold;
+}

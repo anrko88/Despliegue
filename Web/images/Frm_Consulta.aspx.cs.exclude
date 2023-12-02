@@ -1,0 +1,294 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Services;
+using System.Web.Script.Services;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Data;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.Script.Serialization;
+using AjaxControlToolkit;
+using DATA_LAYER;
+using System.Text;
+using System.ComponentModel;
+using System.Drawing;
+using System.IO.Ports;
+using System.IO;
+using System.Net;
+using System.Web.Security;
+using System.Web.UI.WebControls.WebParts;
+using System.Collections;
+using Microsoft.VisualBasic;
+using System.Drawing.Printing;
+using System.Xml;
+
+public partial class Consultas_Frm_Consulta : System.Web.UI.Page
+{
+    clsUtil _clsUtil = new clsUtil();
+    ln_Class sqlCon = new ln_Class();
+    ln_Business _ln_Business = new ln_Business();
+    public string sCarpetaLOG = @"C:\AGM_LOG\";
+    public string sHora;
+    public string sArchivos;
+    public string sEstaciones;
+    public string sEstacion;
+    public string sFecha;
+    public string[] asEstaciones;
+    public string[] asArchivos;
+
+    #region fSetearEstacion
+    public void fSetearEstacion(ListBox ListBox, string sEstaciones)
+    {
+        try
+        {
+            if (ListBox.Items.Count == 0)
+            {   //sEstaciones = fLeerParametrosESTACIONES();
+                asEstaciones = sEstaciones.Split("|".ToCharArray());
+                for (var r = 0; r < asEstaciones.Length; r++)
+                    ListBox.Items.Add(asEstaciones[r]);
+
+                if (ListBox.Items.Count > 0)
+                    ListBox.SelectedIndex = 0;
+            }
+        }
+        catch (Exception ex) {
+            _clsUtil.fCrearLogErrores(sCarpetaLOG, "DESPLIEGUE", "Error - Metodo fSetearEstacion" + ex.ToString(), 4, 3); }
+    }
+    #endregion
+
+    void fLlenarDatos()
+    {
+        sHora = _clsUtil.fFechaHora();
+        sFecha = _clsUtil.fFechaActual();
+        _ln_Business.CarpetaLOG = sCarpetaLOG;
+        _clsUtil.fLeerParametrosIniciales();
+        sEstaciones = _clsUtil.fLeerParametrosEstaciones();
+        sArchivos = _clsUtil.fLeerParametrosARCHIVOS();//Session["sARCHIVOS"].ToString();//
+        asArchivos = sArchivos.Split("|".ToCharArray());
+        sEstacion = Request.Form.Get("lst_Estaciones");
+    }
+
+    void fSetear()
+    {
+        try
+        {
+            _clsUtil.fCrearLogErrores(sCarpetaLOG, "DESPLIEGUE", "Metodo Load de la página - Page_Load", 4, 3);
+            fLlenarDatos();
+            fSetearEstacion(lst_Estaciones, sEstaciones);
+            fn_Funcion("fn_AddItemLoad('" + sEstaciones + "')");
+            //Session["sEstaciones"] = sEstaciones;   
+        }
+        catch (Exception ex)    {
+            _clsUtil.fCrearLogErrores(sCarpetaLOG, "DESPLIEGUE", "ERROR - Metodo fSetear - " + ex.ToString(), 4, 3);
+        }
+    }
+
+    public void fn_Funcion(string sFuncion)
+    {
+        try
+        {
+            _clsUtil.fCrearLogErrores(sCarpetaLOG, "DESPLIEGUE", "Metodo fn_Funcion - " + sFuncion, 4, 3);
+            string sScript = @"<script type='text/javascript'>" + sFuncion + ";</script>";
+            ScriptManager.RegisterStartupScript(this, typeof(Page), "myScript", sScript, false);
+        }
+        catch (Exception ex)
+        {
+            _clsUtil.fCrearLogErrores(sCarpetaLOG, "DESPLIEGUE", "Error - Metodo fn_Funcion - " + ex.ToString(), 4, 3);
+        }
+    }
+
+    public void fn_Grabar()
+    {
+        try
+        {
+            fLlenarDatos();          
+            _clsUtil.fCrearLogErrores(sCarpetaLOG, "DESPLIEGUE", "Metodo Grabar - fn_Grabar", 4, 3);                  
+            string sParamStore = "@ESTACION,@APLICATIVO,@FECHA,@VERSION,@USUARIO,@OBSERVACION,@TIPO_ERROR,@ESTADO";
+            string sObjetoStore = sEstacion + "|" + "TRANSACTOR" + "|" + sFecha + "|" + sFecha + "|" +
+                                     "XT3665" + "|" + "OBSERVACION" + "|" + "OK" + "|" + "ACTIVO";
+            //for (int nCon = 0; nCon < asArchivos.Length;nCon++ )
+            //{               
+             //AQUI LLAMO AL COMPONENTE 
+             //fn_Funcion("fn_ValidaUsuario()");
+             //OBTENGO LOS DATOS
+             //var sTxt_Datos = Request.QueryString["txt_Datos"].ToString();
+             //ARREGLO QUE DEVUELVE EL COMPONENTE
+             //var asTxt_Datos = sTxt_Datos.Split("|".ToCharArray());
+             //AHORA FALTA GRABAR LOS DATOS asTxt_Datos[0] , asTxt_Datos[1] ,    asTxt_Datos[2] 
+             _ln_Business.fGrabar_SP("ST_INSERTAR", sParamStore, sObjetoStore, 1);
+             fn_Funcion("fn_ActualizarGrilla()");//ACTUALIZAR GRILLA CON LOS DATOS GRABADOS 
+             ClientScript.RegisterStartupScript(GetType(), "mostrar mensaje", "fn_AddItemLoad(" + sEstaciones + ");", true);
+             //Page.ClientScript.RegisterStartupScript(GetType(), "script", "fn_AddItemLoad(" + sEstaciones + ");", true);
+             //fn_Funcion("fn_AddItemLoad('" + sEstaciones + "')");
+             //fn_Funcion("fn_RemoveItem('"+ sEstacion +"')");//ELIMINAR ESTACION SELECCIONADO             
+            //}            
+        }
+        catch (Exception ex) { _clsUtil.fCrearLogErrores(sCarpetaLOG, "DESPLIEGUE", "ERROR - fn_Grabar - " + ex.ToString(), 4, 3); }
+    }
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        try
+        {            
+            if (!Page.IsPostBack)
+                fSetear();
+            _clsUtil.fCrearLogErrores(sCarpetaLOG, "DESPLIEGUE", " ----------------------------------------------- ", 4, 3);
+        }
+        catch (Exception ex)
+        {
+            _clsUtil.fCrearLogErrores(sCarpetaLOG, "DESPLIEGUE", "ERROR - Page_Load - " + ex.ToString(), 4, 3);
+        }               
+    }
+
+    protected void btnGrabar_Click(object sender, ImageClickEventArgs e)
+    {
+        try
+        {   
+            fn_Grabar();                  
+        }
+        catch (Exception ex) 
+        {
+            _clsUtil.fCrearLogErrores(sCarpetaLOG, "DESPLIEGUE", "ERROR - btnGrabar_Click - " + ex.ToString(), 4, 3);
+            throw ex; 
+        }
+    }
+
+    public bool fSelect(string _sSelect, int nConexion, string sEstacion)
+    {
+        try
+        {
+            sqlCon.fSelect(_sSelect, nConexion, sEstacion);
+            return true;
+        }
+        catch (Exception ex) { return false; throw ex; }
+    }
+
+    #region [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+    //MOSTRAR CAMPOS EN LA GRILLA
+    [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+    public static string GetColumns_Consulta()
+    {
+        try
+        {
+            
+            List<ln_EntityGrid> cols = new List<ln_EntityGrid>{
+            new ln_EntityGrid{Name="ESTACION",index="ESTACION",label="ESTACION",width=60,align="left",editable=false,editType="text"},
+            new ln_EntityGrid{Name="APLICATIVO",index="APLICATIVO",label="APLICATIVO",width=70,align="left",editable=true,editType="text"},
+            new ln_EntityGrid{Name="FECHA",index="FECHA",label="FECHA",width=120,align="left",editable=true,editType="text"},
+            new ln_EntityGrid{Name="VERSION",index="VERSION",label="VERSION",width=120,align="left",editable=true,editType="text"},
+            new ln_EntityGrid{Name="USUARIO",index="USUARIO",label="USUARIO",width=70,align="left",editable=true,editType="text"},
+            new ln_EntityGrid{Name="OBSERVACION",index="OBSERVACION",label="OBSERVACION",width=120,align="left",editable=true,editType="text"},
+            new ln_EntityGrid{Name="TIPO_ERROR",index="TIPO_ERROR",label="TIPO_ERROR",width=80,align="left",editable=true,editType="text"},
+            new ln_EntityGrid{Name="ESTADO",index="ESTADO",label="ESTADO",width=80,align="left",editable=true,editType="text"},         
+            };
+            JavaScriptSerializer oSerializer = new JavaScriptSerializer();
+            string sJSON = oSerializer.Serialize(cols);
+            return sJSON;
+        }
+        catch (Exception ex)
+        {
+            throw ex; 
+        }
+     
+    }
+
+    [WebMethod]
+    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+    public static JQGridJsonResponse GetPersons(int pPageSize, int pCurrentPage, string pSortColumn, string pSortOrder, string fechaini, string fechafin)
+    {
+        return GetPersonsJSon(pPageSize, pCurrentPage, pSortColumn, pSortOrder, fechaini, fechafin);
+    }
+  
+    internal static JQGridJsonResponse GetPersonsJSon(int pPageSize, int pPageNumber, string pSortColumn, string pSortOrder, string fechaini, string fechafin)
+    {
+        SqlConnection sqlCon = new SqlConnection(ConfigurationManager.ConnectionStrings["cn"].ConnectionString);
+        SqlCommand cmd = new SqlCommand("[ST_DESPLIEGUE]", sqlCon);
+        
+        // SqlDataAdapter da = new SqlDataAdapter("[ST_DESPLIEGUE]", sqlCon);
+        //DataTable oDataTable = new DataTable();
+        // da.Fill(oDataTable);
+        cmd.CommandType = CommandType.StoredProcedure;
+        cmd.Parameters.Add("fecha1", SqlDbType.VarChar).Value = fechaini;
+        cmd.Parameters.Add("fecha2", SqlDbType.VarChar).Value = fechafin;
+        cmd.Parameters.Add("PageSize", SqlDbType.Int).Value = pPageSize;
+        cmd.Parameters.Add("CurrentPage", SqlDbType.Int).Value = pPageNumber;
+        cmd.Parameters.Add("SortColumn", SqlDbType.VarChar, 20).Value = pSortColumn;
+        cmd.Parameters.Add("SortOrder", SqlDbType.VarChar, 4).Value = pSortOrder;
+        DataSet dataSet = new DataSet();
+        SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+        dataAdapter.Fill(dataSet);
+        var persons = new List<Consulta>();
+        foreach (DataRow row in dataSet.Tables[1].Rows)
+        {
+            Consulta person = new Consulta
+            {
+                ESTACION = row["ESTACION"].ToString(),
+                APLICATIVO = row["APLICATIVO"].ToString(),
+                FECHA = row["FECHA"].ToString(),
+                VERSION = row["VERSION"].ToString(),
+                USUARIO = row["USUARIO"].ToString(),
+                OBSERVACION = row["OBSERVACION"].ToString(),
+                TIPO_ERROR = row["TIPO_ERROR"].ToString(),
+                ESTADO = row["ESTADO"].ToString(),
+            };
+            persons.Add(person);
+        }
+
+        return new JQGridJsonResponse(
+            Convert.ToInt32(dataSet.Tables[0].Rows[0]["PageCount"]),
+            Convert.ToInt32(dataSet.Tables[0].Rows[0]["CurrentPage"]),
+            Convert.ToInt32(dataSet.Tables[0].Rows[0]["RecordCount"]), persons);
+    }
+    
+    #endregion
+
+        
+
+    #region HIDEN
+    protected void btn_AgregarEstacion_Click(object sender, EventArgs e)
+    {
+        //if (txt_Estacion.Text.Length>0)
+          //  lst_Estaciones.Items.Add(new ListItem(txt_Estacion.Text.ToUpper(), "C"));
+    }
+
+    protected void btn_EliminarEstacion_Click(object sender, EventArgs e)
+    {
+        //lst_Estaciones.Items.Remove(lst_Estaciones.SelectedItem);
+    }
+    
+    protected void btn_Examinar_O_Click(object sender, EventArgs e)
+    {     
+        //string sScript = @"<script type='text/javascript'>fn_ModalPopup('" + 1 + "');</script>";
+       // ScriptManager.RegisterStartupScript(this, typeof(Page), "myScript", sScript, false);        
+    }
+    protected void btn_Examinar_D_Click(object sender, EventArgs e)
+    {   
+        //string sScript = @"<script type='text/javascript'>fn_ModalPopup('" + 2 + "');</script>";
+        //ScriptManager.RegisterStartupScript(this, typeof(Page), "myScript", sScript, false);        
+    }
+    /*
+    protected void fu_Origen_UploadedComplete(object sender, AsyncFileUploadEventArgs e)
+    {
+        try
+        {
+            HttpPostedFile ciFile = fu_Origen.PostedFile;    
+            string sRuta =  fu_Origen.PostedFile.FileName;
+            string[] aSruta = sRuta.Split('\\');
+            int nRutaLength = aSruta.Length-1;
+            string sFileName = System.IO.Path.GetFileName(ciFile.FileName);
+            string sFile = System.IO.Path.GetFileNameWithoutExtension(sFileName);
+            string sExtension = System.IO.Path.GetExtension(sFileName); 
+            string sDirectorio = Convert.ToString(System.IO.Directory.GetParent(sRuta));
+            //fu_Origen.FileName = sDirectorio;
+            //fu_Origen.ScriptPath = sDirectorio;            
+        }
+        catch (Exception ex) { throw ex; }
+    }
+    */
+    #endregion
+  
+}
+

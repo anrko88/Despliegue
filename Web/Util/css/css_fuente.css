@@ -1,0 +1,126 @@
+/***************************************************************
+Estilo		::	css_lbl_titulo
+Descripcion	::	Estilo los Titulos
+Log			::	JRC - 10/02/2012
+************************************************************ */
+.css_lbl_titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+}
+.css_lbl_subTitulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333333;
+}
+.css_lbl_tituloContenido {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333333;
+}
+
+
+/***************************************************************
+Estilo		::	css_lbl_texto
+Descripcion	::	Estilo los labels
+Log			::	JRC - 10/02/2012
+************************************************************ */
+.css_lbl_texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px !important;
+    color: #666;
+	font-weight: normal;
+}
+
+
+/***************************************************************
+Estilo		::	css_lbl_inputLabel
+Descripcion	::	Estilo los input Label
+Log			::	JRC - 10/02/2012
+************************************************************ */
+.css_lbl_inputLabel {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    color: #666;
+    font-weight: bold;
+}
+
+
+/***************************************************************
+Estilo		::	css_linkCerrarSesion
+Descripcion	::	Estilo para el link de cerrar sesión
+Log			::	JRC - 10/02/2012
+************************************************************ */
+A.css_link{ 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size : 11px; 
+	color:#666666;
+	text-decoration:none;
+	padding-left: 3px;
+	padding-right: 5px;
+}
+A.css_link:active {  
+	text-decoration :none;
+}
+A.css_link:hover {  
+	text-decoration :underline;
+}
+A.css_link:visited {  
+	text-decoration :none;
+}
+A.css_link:visited:hover { 
+	text-decoration :underline;
+} 
+
+
+/***************************************************************
+Estilo		::	css_linkCerrarSesion
+Descripcion	::	Estilo para el link de cerrar sesión
+Log			::	JRC - 10/02/2012
+************************************************************ */
+A.css_linkCerrarSesion{ 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size : 11px; 
+	color:#CC3300;
+	text-decoration:none;
+	padding-left: 3px;
+	padding-right: 5px;
+}
+A.css_linkCerrarSesion:active {  
+	text-decoration :none;
+}
+A.css_linkCerrarSesion:hover {  
+	text-decoration :underline;
+}
+A.css_linkCerrarSesion:visited {  
+	text-decoration :none;
+}
+A.css_linkCerrarSesion:visited:hover { 
+	text-decoration :underline;
+} 
+
+
+
+/***************************************************************
+Estilo		::	css_lbl_mini
+Descripcion	::	Estilo los input Label
+Log			::	JRC - 10/02/2012
+************************************************************ */
+.css_lbl_mini {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #666;
+}
+
+/***************************************************************
+Estilo		::	css_lbl_comentario_grilla
+Descripcion	::	Estilo para comentario en grilla
+Log			::	AEP - 03/12/2012
+************************************************************ */
+.css_lbl_comentario_grilla {
+
+	text-decoration: none;   
+}

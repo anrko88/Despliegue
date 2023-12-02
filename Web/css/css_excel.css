@@ -1,0 +1,30 @@
+﻿.td-grid-header
+{
+    background-color: #6ab952;
+	font-family: Arial;
+    font-size: 8pt;
+    color: #ffffff;
+	text-align:center;
+    z-index: 10;  
+    font-weight:bold
+}
+.td-grid-blanco
+{
+    background-color: #ffffff;
+    height: 15px;
+    padding: 3px;
+    font-family: Arial;
+    font-size: 8pt;
+    color: #404a55;
+    text-align:center;	
+}
+.td-grid-gris
+{
+    background-color: #f0f0f0;
+    height: 15px;
+    padding: 3px;
+    font-family: Arial;
+    font-size: 8pt;
+    color: #404a55;
+    text-align:center;	
+}
